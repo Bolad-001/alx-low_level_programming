@@ -1,1 +1,2 @@
-100-intelZZ
+#!/bin/bash
+gcc -S -masm=intel $CFILE
