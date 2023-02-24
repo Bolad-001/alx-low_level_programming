@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - Print digit from 0 to 9
+* main - Print all digit starting from 0
 *
 * Return: Always 0 (Success)
 */
@@ -10,9 +10,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 48; i < 58; i++)
 	{
-		printf("%d", i);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
