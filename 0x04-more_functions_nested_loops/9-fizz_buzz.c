@@ -19,7 +19,7 @@ int main(void)
 		else
 			printf(" %d", i);
 	}
-	printf("buzz\n");
+	printf("Buzz\n");
 
 	return (0);
 }
