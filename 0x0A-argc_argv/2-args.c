@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include "stdio.h"
 
 /**
  * main - A program that prints all arguements it receives
@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	while (argc--)
 	{
-		printf("%s\n", argv++);
+		printf("%s\n", *argv++);
 	}
 	return (0);
 }
