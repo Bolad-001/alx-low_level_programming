@@ -25,7 +25,7 @@ int _sqrt_recursion(int n)
 */
 int square_root(int i, int j)
 {
-	if (i < j)
+	if (i > j)
 		return (-1);
 	else if (i * i == j)
 		return (i);
