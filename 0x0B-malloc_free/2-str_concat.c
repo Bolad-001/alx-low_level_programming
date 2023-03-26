@@ -3,7 +3,7 @@
 /**
 * str_concat - function that concatenates two strings
 * @s1: input string 1
-* s2: input string 2
+* @s2: input string 2
 * Return: NULL on failure otherwise the new pointer
 */
 
@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 
 	str = malloc(sizeof(char) * total_len + 1);
 
-	for (k = 0; k <= total_len; k++)
+	for (k = 0; k < total_len; k++)
 	{
 		if (k < s1len)
 		{
