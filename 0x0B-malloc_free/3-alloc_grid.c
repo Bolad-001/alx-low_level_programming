@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
 * alloc_grid- funtion that returns pointer to a 2 dimensional array
@@ -19,7 +18,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	dimen_array = (int **)malloc(sizeof(int) * height);
+	dimen_array = malloc(sizeof(int) * height);
 
 	if (dimen_array == NULL)
 	{
@@ -28,22 +27,24 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		dimen_array[i] = (int *)malloc(sizeof(int) * width);
+		dimen_array[i] = malloc(sizeof(int) * width);
 
 		if (dimen_array[i] == NULL)
 		{
+			for (j = 0; j < 1; j++)
+			{
+				free(dimen_array[j]);
+			}
+			free(dimen_array);
+
 			return (NULL);
 		}
-	
 
-		for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
 		{
-			for (j = 0; j < width; j++)
-			{
-				dimen_array[i][j] = 0;
-			}
+			dimen_array[i][j] = 0;
 		}
 	}
+	
 	return (dimen_array);
-
 }
