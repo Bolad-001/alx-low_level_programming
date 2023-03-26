@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 
 		if (dimen_array[i] == NULL)
 		{
-			for (j = 0; j < 1; j++)
+			for (j = 0; j < i; j++)
 			{
 				free(dimen_array[j]);
 			}
