@@ -18,19 +18,30 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	dimen_array =(int **)malloc(sizeof(int) * height);
+	dimen_array = (int **)malloc(sizeof(int) * height);
+
 	if (dimen_array == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0; i < height; i++)
 	{
 		dimen_array[i] = (int *)malloc(sizeof(int) * width);
+
 		if (dimen_array[i] == NULL)
+		{
 			return (NULL);
+		}
 	}
+
 	for (i = 0; i < height; i++)
+	{
 		for (j = 0; j < width; j++)
+		{
 			dimen_array[i][j] = 0;
+		}
+	}
 	return (dimen_array);
 
 }
