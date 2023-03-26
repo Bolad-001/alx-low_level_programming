@@ -9,7 +9,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **grid;
+	int **dimen_array;
 	int i;
 	int j;
 
@@ -18,19 +18,19 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	grid = malloc(sizeof(int) * height);
+	dimen_array =(int **)malloc(sizeof(int) * height);
 	if (grid == NULL)
 		return (NULL);
 
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = malloc(sizeof(int) * width);
-		if (grid[i] == NULL)
+		dimen_array[i] = (int *)malloc(sizeof(int) * width);
+		if (dimen_array[i] == NULL)
 			return (NULL);
 	}
 	for (i = 0; i < height; i++)
 		for (j = 0; j < width; j++)
-			grid[i][j] = 0;
-	return (grid);
+			dimen_array[i][j] = 0;
+	return (dimen_array);
 
 }
