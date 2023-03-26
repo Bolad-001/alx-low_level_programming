@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	dimen_array = malloc(sizeof(int) * height);
+	dimen_array = (int **)malloc(sizeof(int) * height);
 
 	if (dimen_array == NULL)
 	{
@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		dimen_array[i] = malloc(sizeof(int) * width);
+		dimen_array[i] = (int *)malloc(sizeof(int) * width);
 
 		if (dimen_array[i] == NULL)
 		{
@@ -45,6 +45,5 @@ int **alloc_grid(int width, int height)
 			dimen_array[i][j] = 0;
 		}
 	}
-	
 	return (dimen_array);
 }
