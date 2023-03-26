@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	dimen_array = malloc(sizeof (int *) * height);
+	dimen_array = malloc(sizeof(int *) * height);
 
 	if (dimen_array == NULL)
 	{
