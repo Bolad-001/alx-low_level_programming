@@ -29,7 +29,7 @@ int check_prime(int n, int i)
  * is_prime_number - function to check if an
  * input integer is a prime number
  * @n: integer to check
- * Return: 1 if integer is a prime number 
+ * Return: 1 if integer is a prime number
  * otherwise return 0
  */
 
