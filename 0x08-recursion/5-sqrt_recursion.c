@@ -9,11 +9,11 @@
 
 int _sqrt_recursion(int n)
 {
-	int find_sqrt(n, guess_num);
+	int find_sqrt(int n, int guess_num);
 
 	int guess_num = 1;
 
-	return (find_sqrt(int n, int guess_num));
+	return (find_sqrt(n, guess_num));
 }
 
 /**
