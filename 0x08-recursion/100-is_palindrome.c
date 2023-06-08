@@ -36,7 +36,7 @@ int find_palindrome(char *i, char *j)
 
 	if ((*i == *j) && (*i != '\0'))
 	{
-		return (find_palindrome(i + 1, j + 1));
+		return (find_palindrome(i + 1, j - 1));
 	}
 	return (1);
 }
