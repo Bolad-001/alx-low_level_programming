@@ -46,4 +46,3 @@ int is_prime_number(int n)
 		return (check_prime(n, i));
 	}
 }
-
