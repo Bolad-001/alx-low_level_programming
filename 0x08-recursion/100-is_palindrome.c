@@ -21,8 +21,8 @@ int _strlen(char *s)
 
 /**
  * find_palindrome - checks if a string is a palindrome
- * @a: pointer to the first character of the string
- * @b: pointer to the last character of the string
+ * @i: pointer to the first character of the string
+ * @j: pointer to the last character of the string
  *
  * Return: 1 if the string is a palindrome otherwise 0
  */
