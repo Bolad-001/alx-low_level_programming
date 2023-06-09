@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - function to print the result of multipli
  * cation of two numbers
@@ -12,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-	int result;
+	int first_num, second_num, res;
 
 	if (argc != 3)
 	{
@@ -20,9 +21,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	result = atoi((argv[1]) * atoi(argv[2]));
+	first_num = atoi(argv[1]);
+	second_num = atoi(argv[2]);
+	res = first_num * second_num;
 
-	printf("%d\n", result);
+	printf("%d\n", res);
 
 	return (0);
 }
