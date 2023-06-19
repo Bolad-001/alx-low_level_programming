@@ -6,7 +6,7 @@
  * @s1: first string
  * @s2: second string
  *
- * Return: a pointer that allocate a new space in memory to 
+ * Return: a pointer that allocate a new space in memory to
  * the string
  */
 
@@ -17,11 +17,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return "";
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		return "";
+		s2 = "";
 	}
 
 	for (len1 = 0; s1[len1] != '\0'; len1++)
