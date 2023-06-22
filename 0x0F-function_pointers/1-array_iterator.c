@@ -4,8 +4,9 @@
  * array_iterator: function that execute a funtion
  * @size: size of the array
  * @action: function pointer
+ * @array: arary to  check
  *
- * Return: 0
+ * Return: Nothing
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -18,6 +19,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	}
 	for (i = 0; i < size; i++)
 	{
-		(*action)(array[i]);
+		action(array[i]);
 	}
 }
