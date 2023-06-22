@@ -1,11 +1,11 @@
 #include "function_pointers.h"
-
+#include <stdio.h>
 /**
  * array_iterator: function that execute a funtion
  * given as a parameter
  * @size: size of the array
  * @action: function pointer
- * @array: arary to  check
+ * @array: arrray to  check
  *
  * Return: Nothing
  */
