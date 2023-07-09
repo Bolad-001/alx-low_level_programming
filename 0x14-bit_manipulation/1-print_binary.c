@@ -4,7 +4,7 @@
  * print_binary - function to print the binary
  * representation of a number using bitwise
  * operator
- * @n; integer to convert
+ * @n: integer to convert
  *
  * Return: Nothing
  */
@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 
 	for (i = bit; i >= 0; i--)
 	{
-		unsigned long int mask = (unsigned long int)1 << i;
+		unsigned long int mask = 1UL << i;
 
 		if (n & mask)
 		{
