@@ -1,12 +1,11 @@
 #include "dog.h"
 
-/*
- * free_dog - function that free dog
+/**
+ * free_dog - function that frees a dogi
  * @d: funct to free
  *
  * Return: Nothing
  */
-
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
